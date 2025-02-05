@@ -283,7 +283,49 @@
             box-sizing: border-box;
             text-align: center;
         }
-
+        main .thumb_rolling {
+            width: 100%;
+            height: 312px;
+            margin-top: 36px;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        main .thumb_rolling > li{
+            float: left;
+            top: 0px;
+            width: 25%;
+            height: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        main .thumb_rolling > li a{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        main .thumb_rolling > li img{
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+        }
+        main .thumb_rolling > li h1 {
+            font-size: 20px;
+            font-weight: bold;
+            color: #41392f;
+            margin-top: 12px;
+        }
+        main .thumb_rolling > li p {
+            font-size: 13px;
+            font-weight: bold;
+            color: #959595;
+            margin: 12px 0 26px;
+        }
+        main .thumb_rolling > li h2{
+            font-size: 20px;
+            font-weight: bold;
+            color:#ff6a00;
+        }
+       
         main > .vegetable ul {
             width: 100%;
             height: 312px;
@@ -314,6 +356,40 @@
             border: 1px solid pink;
             box-sizing: border-box;
         }
+        main .all {
+            display: block;
+            width: 300px;
+            height: 50px;
+            border: 1px solid #efefef;
+            box-shadow: 0px 2px 2px #999;
+            text-align: center;
+            line-height: 50px;
+            margin: 56px auto 0;
+            color: #626262;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        main .all:hover{border-color: #999;}
+
+        main > .premium{
+            background-image: url(./images/premium_bg.png);
+            background-size: cover;
+            background-position: 50% center;
+        }
+
+        main > .premium > article{
+            text-align: center;
+        }
+        
+         main > .premium > article img{margin-top: 52px;}
+
+         main > .seafood{}
+         main > .seafood > article{
+            padding: 60px 0px 40px;
+            box-sizing: border-box;
+            text-align: center;
+         }
+        
 
       
         footer{
@@ -331,10 +407,12 @@
 
         footer > div:nth-child(1) {
             height: 50px;
+            background-color: #626262;
         }
 
         footer > div:nth-child(2) {
             height: 156px;
+            background-color: #434343;
         }
 
         footer > div > div {
@@ -343,6 +421,37 @@
             border: 1px solid orange;
             box-sizing: border-box;
             margin: 0 auto;
+        }
+        footer .terms{
+            float: left;
+            margin-top: 14px;
+            color: #eee;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        footer .terms > a{
+            color: inherit;
+            font-size: inherit;
+            font-weight: inherit;
+        }
+
+
+
+        footer .terms > a:first-child{
+            color: #ff6a00;
+        }
+
+        footer .info {
+            float: left;
+            margin-top: 16px;
+            color: #aca9a9;
+            font-size: 15px;
+            font-weight: bold;
+            line-height: 26px;
+        }
+        footer .tel {
+            float: right;
+            margin-top: 16px
         }
     
         
@@ -541,25 +650,77 @@
             </article>
         </section>
         <section class="premium">
-            <article></article>
+            <article>
+                <a href="#">
+                    <img src="./images/main_premium_tit.png" alt="프리미엄상품소개">
+                </a>
+            </article>
         </section>
         <section class="seafood">
             <article>
-                <ul>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
+                <ul class="thumb_rolling">
+                    <li>
+                        <a href="#">
+                            <img src="images/thumb1.jpg" alt="플레인요거트">
+                            <h1>플레인요거트 4개입</h1>
+                            <p>견과류, 과일과 같이 먹는 플레인 요거트</p>
+                            <h2>7,500원</h2>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/thumb2.jpg" alt="플레인요거트">
+                            <h1>프랑스 더치커피</h1>
+                            <p>프랑스만의 방식으로 내려진 더치커피</p>
+                            <h2>5,000원</h2>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/thumb3.jpg" alt="플레인요거트">
+                            <h1>로얄밀크 홍차</h1>
+                            <p>일본에서 온 깊고 풍부한맛의 로얄밀크티</p>
+                            <h2>17,000원</h2>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/thumb4.jpg" alt="플레인요거트">
+                            <h1>스위스 핫초코 320g</h1>
+                            <p>스위스에서 온 핫초코로 따뜻한 연말</p>
+                            <h2>4,000원</h2>
+                        </a>
+                    </li>
                 </ul>
+                <a href="#" class="all">전체 상품 보기</a>
             </article>
         </section>
     </main>
     <footer>
         <div>
-            <div></div>
+            <div>
+                <p class="terms">
+                <a href="#">이용약관</a>
+                &nbsp;&nbsp;|&nbsp;&nbsp; 
+                <a href="#">이용안내</a>
+                &nbsp;&nbsp;|&nbsp;&nbsp; 
+                <a href="#">개인정보취급방침</a>
+                </p>
+            </div>
         </div>
         <div>
-            <div></div>
+            <p class="info">
+                 상호명 : 쇼핑몰&nbsp;&nbsp;&nbsp;대표 홍길동&nbsp;&nbsp;&nbsp;메일:
+                mester@foodshop.com
+                <br>
+                 통신판매업신고번호: 123-567-7890&nbsp;&nbsp;&nbsp; 사업자등록번호 : 123-45-
+                7890&nbsp;&nbsp;&nbsp;대표번호 : 070-1234-5678
+                <br>
+                 팩스번호 : 051-1234-5678&nbsp;&nbsp;&nbsp;개인정보관리자 : 김유신
+                &nbsp;&nbsp;&nbsp;주소 : 부산시 부산진구 서전로 123 
+            </p>
+                <img src="images/footer_tel.png" class="tel" alt="365 고객센터">
+            </div>
         </div>
     </footer>
     </div>
