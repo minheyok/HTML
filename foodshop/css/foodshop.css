@@ -161,34 +161,31 @@ main > .go > article > .banner{
     
 }
 
+main >.go > article > .banner {
+    width: 322px;
+    height: 220px;
+}
+
 main >.go > article > .banner1 {
     width: 412px;
     height: 450px;
     background-image: url(/foodshop/images/main_go_bg1.png);
 }
 main >.go > article > .banner2{
-    width: 322px;
-    height: 200px;
     margin-left: 11px;
     background-image: url(/foodshop/images/main_go_bg2.png);
 }
 main >.go > article > .banner3{
     float: right;
-    width: 322px;
-    height: 220px;
     background-image: url(/foodshop/images/main_go_bg3.png);
 }
 main >.go > article > .banner4{
-    width: 322px;
-    height: 220px;
     margin-left: 11px;
     margin-top: 10px;
     background-image: url(/foodshop/images/main_go_bg4.png);
 }
 main >.go > article > .banner5{
     float: right;
-    width: 322px;
-    height: 220px;
     margin-top: 10px;
     background-image: url(/foodshop/images/main_go_bg5.png);
 }
@@ -221,7 +218,7 @@ main > .go >article > .banner > a .title > i {
 }
 
 main > .oneday {
-    background-image: url(images/oneday_bg.png);
+    background-image: url(/foodshop/images/oneday_bg.png);
     background-size: cover;
     background-position: 50% center;
 }
@@ -293,7 +290,7 @@ main .all {
 main .all:hover{border-color: #999;}
 
 main > .premium{
-    background-image: url(./images/premium_bg.png);
+    background-image: url(/foodshop/images/premium_bg.png);
     background-size: cover;
     background-position: 50% center;
 }
