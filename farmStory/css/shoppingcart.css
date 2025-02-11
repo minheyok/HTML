@@ -89,8 +89,10 @@ header > div:nth-child(3) > ul > li > a > img {
 }
 
 .background img {
-    width: 100%;
-    height: auto;
+    width: 980px;
+    height: 184px;
+    top: 142px;
+    left: 470px;
 }
 
 
